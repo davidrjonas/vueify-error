@@ -1,6 +1,8 @@
 Vueify issue
 ------------
 
+See https://github.com/vuejs/vueify/issues/93
+
 ```
 $ node -v
 v4.4.5
@@ -23,4 +25,13 @@ $ grep -F vue-hot-reload-api npm-shrinkwrap.json
     "vue-hot-reload-api": {
       "from": "vue-hot-reload-api@>=1.3.2 <2.0.0",
       "resolved": "http://npm.mirror.lax/vue-hot-reload-api/-/vue-hot-reload-api-1.3.2.tgz"
+```
+
+Workaround
+----------
+
+After normal `npm install` reinstall vueify with `--legacy-bundling`
+
+```
+$ npm install && npm install --legacy-bundling vueify
 ```
